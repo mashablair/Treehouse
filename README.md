@@ -31,7 +31,7 @@ Coursework for classes and projects I do at Treehouse.com.
 - [x] HTTP Basics
 - [ ] Debugging JavaScript
 - [x] The Landscape of JavaScript
-- [ ] GitHub Basics
+- [x] GitHub Basics
 - [x] Using jQuery Plugins
 - [x] REST API Basics
 - [x] Callback Functions in JavaScript
