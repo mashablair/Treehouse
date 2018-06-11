@@ -35,6 +35,7 @@ Coursework for classes and projects I do at Treehouse.com.
 - [x] Using jQuery Plugins
 - [x] REST API Basics
 - [x] Callback Functions in JavaScript
+- [x] AWS
 - [ ] Intro to Product Design 
 - [ ] SQL Basics
 - [ ] DOM Scripting by Example
