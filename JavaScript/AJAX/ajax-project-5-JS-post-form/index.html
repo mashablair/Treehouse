@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AJAX with jQuery</title>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css"> 
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Sign Up for Our Newsletter</h1>
+            <div id="signup">
+              <form method="post" action="http://localhost:8888/ajax-JS-post-form/signup-2.html">
+                  <label for="userName">Please type your name</label>
+                  <input type="text" name="userName" id="userName"><br>
+                  <label for="email">Your email address</label>
+                  <input type="email" name="email" id="email"><br>
+                  <label for="submit"></label>
+                <input type="submit" value="Signup!" id="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

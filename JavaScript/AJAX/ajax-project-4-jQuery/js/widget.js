@@ -1,13 +1,7 @@
 $(document).ready(function () {
-  "use strict";
-	// for some reason relative url doesn't work in MAMP...
-	// it's looking for 'http://localhost:8888/data/employees.json'
-	// so I'll use absolute url
-//	var url = "../data/employees.json"; 
-	var url = "http://localhost:8888/ajax-project-4-jQuery/data/employees.json";
-  $.getJSON(url, function (data) {
+  $.getJSON('../data/employees.json', function (data) {
     var statusHTML = '<ul class="bulleted">';
-    $.each(data, function (index, employee) {
+    $.each(data,function (index, employee) {
       if (employee.inoffice === true) {
         statusHTML +='<li class="in">';
       } else {
@@ -16,6 +10,22 @@ $(document).ready(function () {
       statusHTML += employee.name + '</li>';
     });
     statusHTML += '</ul>';
-    $('#employeeList').html(statusHTML);
+    $('#employeeList').html(statusHTML)
+  }); // end getJSON
+  
+  
+  
+  $.getJSON('../data/rooms.json', function (data) {
+    var statusHTML = '<ul class="rooms">';
+    $.each(data,function (index, room) {
+      if (room.available === true) {
+        statusHTML +='<li class="empty">';
+      } else {
+        statusHTML +='<li class="full">';
+      }
+      statusHTML += room.room + '</li>';
+    });
+    statusHTML += '</ul>';
+    $('#roomList').html(statusHTML)
   }); // end getJSON
 }); // end ready
