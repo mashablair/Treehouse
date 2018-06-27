@@ -1,0 +1,116 @@
+/* BASE ------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #343434;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin-bottom: 1.25em;
+}
+
+/* HEADER & FOOTER ----------------------------------------- */
+
+header {
+  height: 325px;
+  padding: 0.5em 1em;
+}
+header h1 {
+  color: #fff;
+  font-size: 4.8em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+header p {
+  color: #f8f295;
+  font-size: 1.25em;
+  margin: 0;
+}
+footer {
+  padding: 3em 0 2em;
+  background-color: #eee;
+  margin-top: 3.5em;
+  -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* CONTAINERS ---------------------------------------------- */
+
+.main-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 0 10px;
+}
+
+/* COMPONENTS ----------------------------------------------- */
+
+.main-nav {
+  margin-top: 1em;
+}
+.main-nav li {
+  display: inline-block;
+}
+.main-nav a {
+  color: #fff;
+  font-size: 0.85em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em;
+  transition: 0.3s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em;
+  border: 1px solid #eee;
+  border-radius: 0.25em;
+}
+.card h2 {
+  font-size: 1.75em;
+  line-height: 1.25;
+  margin: 0.35em 0 0;
+}
+.card .btn {
+  margin-top: auto;
+}
+.material-icons {
+  color: rgba(39, 141, 164, 0.6);
+  font-size: 2.15em;
+}
+.btn {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
+}
+
+/* MEDIA QUERIES ------------------------------------------------- */
+
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 3.4em;
+  }
+}
+@media (min-width: 768px) {
+  .main-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    background-position: 0 0, 0 15%;
+  }
+}

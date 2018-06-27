@@ -1,0 +1,13 @@
+
+.heart-red {
+  --main-fill-color: #c44;
+  --sec-fill-color: #d35f5f;
+}
+.heart-green {
+  --main-fill-color: #41af5d;
+  --sec-fill-color: #5ece7f;
+}
+.heart-blue {
+  --main-fill-color: #2e97af;
+  --sec-fill-color: #38acd0;
+}

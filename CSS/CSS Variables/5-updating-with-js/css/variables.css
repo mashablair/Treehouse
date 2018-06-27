@@ -1,0 +1,6 @@
+
+.ball {
+  background-color: var(--ball-bg, tomato);
+  transform: translate( calc(var(--pos-x) * 1px), calc(var(--pos-y) * 1px) );
+  transition: 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
