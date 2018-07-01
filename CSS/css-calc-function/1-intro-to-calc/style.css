@@ -1,0 +1,15 @@
+/* BASE STYLES */
+
+html,
+body
+{
+	height: 100%;
+}
+
+/* CALC STYLES */
+
+.column {
+	width: calc(50% + 2em);
+	height: calc(100% - 3em);
+	background: steelblue;
+}
