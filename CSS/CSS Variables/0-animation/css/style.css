@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.ball {
+  --animate: bounce;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: tomato;
+  animation: var(--animate) 1.15s ease-in-out infinite;
+}
+
+@media (min-width: 576px) {
+  .ball {
+    --animate: slide;
+  }
+}
+
+@media (min-width: 768px) {
+  .ball {
+    --animate: diag;
+  }
+}
+
+@keyframes bounce {
+  50% { transform: translate3d(0,80vh,0); }
+}
+@keyframes slide {
+  50% { transform: translate3d(76vw,0,0); }
+}
+@keyframes diag {
+  50% { transform: translate3d(86vw,80vh,0); }
+}
