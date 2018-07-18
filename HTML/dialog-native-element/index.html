@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>HTML Dialog</title>
+  </head>
+  <body>
+    
+    
+<!--    This is a native feature but it's not yet supported well by browsers (only latest Chrome at the moment). Polyfill is available already.  The advantage of using this native <dialog> element is much better accessibility: if set up as modal, it will make everything else inaccessible until user submits input.  So no need for library or framework to create functionality -- we can use .show() or .showModal() native methods-->
+    
+    <dialog id="dialogWindow">
+      <form method="dialog">
+        <input type="text">
+        <button type="submit">OK</button>
+      </form>
+    </dialog>
+    
+    <button id="openDialog">Open Dialog</button>
+    <button id="openModalDialog">Open Modal Dialog</button>
+	  
+	  <br>
+	  
+	  <p>This is a native feature but it's not yet supported well by browsers (only latest Chrome at the moment). Polyfill is available already.  The advantage of using this native element is much better accessibility: if set up as modal, it will make everything else inaccessible until user submits input.  So no need for library or framework to create functionality -- we can use .show() or .showModal() native methods</p>
+  
+    <script src="app.js"></script>
+  </body>
+</html>
