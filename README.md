@@ -17,14 +17,14 @@ Coursework for classes and projects I do at Treehouse.com.
 - [x] CSS Selectors
 - [x] jQuery Basics
 - [ ] Bootstrap 4 Basics
-- [ ] Introduction to Front End Performance Optimization 
+- [x] Introduction to Front End Performance Optimization 
 - [ ] HTML Tables
 - [ ] HTML Video and Audio 
 - [x] Create a Media Player with Media Element.js
 - [ ] AJAX Basics
 - [x] Object-Oriented JavaScript
 - [x] Web Accessibility Compliance
-- [ ] Website Optimization
+- [x] Website Optimization
 
 ## Classes from Other Tracks
 
@@ -39,9 +39,13 @@ Coursework for classes and projects I do at Treehouse.com.
 - [ ] Intro to Product Design 
 - [ ] SQL Basics
 - [ ] DOM Scripting by Example
-- [ ] CSS Transitions and Transforms
+- [x] CSS Transitions and Transforms
 - [ ] JavaScript Array Iteration Methods
 - [ ] CSS Grid Layout
 - [ ] Security Literacy
+- [x] Front End Web Optimization Workflow
+- [x] SVG Basics
+- [x] Animating SVG with CSS
+- [x] Create Tooltip with CSS workshop
 
 :fire:
