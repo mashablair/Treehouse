@@ -20,13 +20,24 @@ $(document).ready(function() {
    // callback
     function displayPhotos(data) {
       var photoHTML = '<ul>';
-      $.each(data.items,function(i,photo) {
-        photoHTML += '<li class="grid-25 tablet-grid-50">';
-        photoHTML += '<a href="' + photo.link + '" class="image">';
-        photoHTML += '<img src="' + photo.media.m + '"></a></li>';
-      }); // end each
-      photoHTML += '</ul>';
-      $('#photos').html(photoHTML);
+      var numOfPhotos = data.items.length;
+      
+      // check if there are photos returned in Flickr's object
+      if (numOfPhotos > 0) {
+
+        $.each(data.items, function(i,photo) {
+          photoHTML += '<li class="grid-25 tablet-grid-50">';
+          photoHTML += '<a href="' + photo.link + '" class="image">';
+          photoHTML += '<img src="' + photo.media.m + '"></a></li>';
+        }); // end each
+        
+        photoHTML += '</ul>';
+        $('#photos').html(photoHTML);
+      
+        // if no photos, display message
+      } else {
+        $('#photos').html('<p>Sorry, no photos found when you searched for: "' + $searchField.val() + '".</p>');
+      }
       
       // re-enable the button 
       $searchField.prop("disabled", false);
@@ -34,7 +45,12 @@ $(document).ready(function() {
     }
    
    // AJAX
-    $.getJSON(flickerAPI, flickrOptions, displayPhotos);
+    $.getJSON(flickerAPI, flickrOptions, displayPhotos)
+    
+      // handle error
+      .fail(function(jqXHR) {
+        alert('Sorry, your request failed. Error: ' + jqXHR.status);
+    });
 
   }); // end click
 
