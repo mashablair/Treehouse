@@ -31,6 +31,7 @@ function get(query) {
       const url = `https://api.openweathermap.org/data/2.5/weather?${querystring.stringify(parameters)}`;
       console.log(url);
 
+		process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
       const request = https.get(url, response => {
         if (response.statusCode === 200) {
           let body = '';
