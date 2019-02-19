@@ -16,31 +16,37 @@ Coursework for classes and projects I do at Treehouse.com.
 - [x] JavaScript and the DOM
 - [x] CSS Selectors
 - [x] jQuery Basics
-- [ ] Bootstrap 4 Basics
+- [x] Bootstrap 4 Basics
 - [x] Introduction to Front End Performance Optimization 
-- [ ] HTML Tables
-- [ ] HTML Video and Audio 
+- [x] HTML Tables
+- [x] HTML Video and Audio 
 - [x] Create a Media Player with Media Element.js
-- [ ] AJAX Basics
+- [x] AJAX Basics
 - [x] Object-Oriented JavaScript
 - [x] Web Accessibility Compliance
 - [x] Website Optimization
 
+## Classes from Learn React Track
+
+- [x] React Basics
+- [x] React Components
+- [x] Using Create React App
+
 ## Classes from Other Tracks
 
 - [x] HTTP Basics
-- [ ] Debugging JavaScript
+- [x] Debugging JavaScript
 - [x] The Landscape of JavaScript
 - [x] GitHub Basics
 - [x] Using jQuery Plugins
 - [x] REST API Basics
 - [x] Callback Functions in JavaScript
 - [x] AWS
-- [ ] Intro to Product Design 
+- [x] Intro to Product Design 
 - [ ] SQL Basics
-- [ ] DOM Scripting by Example
+- [x] DOM Scripting by Example
 - [x] CSS Transitions and Transforms
-- [ ] JavaScript Array Iteration Methods
+- [x] JavaScript Array Iteration Methods
 - [ ] CSS Grid Layout
 - [ ] Security Literacy
 - [x] Front End Web Optimization Workflow
